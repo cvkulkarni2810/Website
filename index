@@ -1,0 +1,89 @@
+<html>
+	<head>
+	<style>
+		h1{
+			text-align: center;
+			color: #ad640a;
+			font-family: verdana;
+			font-size: 400%;
+		}
+		
+		h7{
+			font-family: helvetica;
+			padding-left: 105px;
+			font-size: 80%;
+			color: #4467db;
+		}
+		
+		label{
+			font-family: helvetica;
+			padding-left: 50px;
+			font-size: 20;
+		}
+		
+		input[type=text] {
+			font-size: 20;
+			margin-left: 50px;
+			margin-top: 3px;
+		}
+		
+		input[type=radio] {
+			font-size: 20;
+			margin-left: 50px;
+			margin-top: 3px;
+		}
+		
+		p{
+			color: red;
+			font-family: courier;
+			font-size: 150%;
+		}
+		
+		body{
+			background-image: -webkit-linear-gradient(top, #4292db, #34c3eb)
+		}
+		
+		button{
+			font-family: helvetica;
+			font-size: 20;
+			margin-left: 140px;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	</style>
+	</head>
+	
+  	<body>
+		<h1>Register</h1>
+		
+		<form>
+			<br><br><label for="firstName">First Name</label><br>
+			<input type="text" id="firstName" name="firstName"><br><br>
+			
+			<label for="lastName">Last Name</label><br>
+			<input type="text" id="lastName" name="lastName"><br><br>
+			
+			<label for="username">Username</label><br>
+			<input type="text" id="username" name="username"><br><br>
+			
+			<label for="email">Email</label><br>
+			<input type="text" id="email" name="email"><br><br>
+			
+			<label for="occupation">Are you a Student or are Working?</label><br>
+			<input type="radio" id="student" name="student">
+			<label style="font-family: helvetica;
+			padding-left: 10px;
+			font-size: 20;"  for="student">Student</label><br>
+			<input type="radio" id="working" name="working">
+			<label  style="font-family: helvetica;
+			padding-left: 10px;
+			font-size: 20;" for="working">Working</label><br>
+		</form>
+		
+		<h7>Already have an account? Sign In<br><br></h7>
+		
+		<button>
+			Register
+		</button>
+	</body>
+</html>
