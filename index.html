@@ -1,90 +1,151 @@
 <html>
-	<head>
-	<style>
-		h1{
-			text-align: center;
-			color: #ad640a;
-			font-family: verdana;
-			font-size: 400%;
-		}
-		
-		h7{
-			font-family: helvetica;
-			padding-left: 105px;
-			font-size: 80%;
-			color: #4467db;
-		}
-		
-		label{
-			font-family: helvetica;
-			padding-left: 50px;
-			font-size: 20;
-		}
-		
-		input[type=text] {
-			font-size: 20;
-			margin-left: 50px;
-			margin-top: 3px;
-		}
-		
-		input[type=radio] {
-			font-size: 20;
-			margin-left: 50px;
-			margin-top: 3px;
-		}
-		
-		p{
-			color: red;
-			font-family: courier;
-			font-size: 150%;
-		}
-		
-		body{
-			background-image: -webkit-linear-gradient(top, #4292db, #34c3eb)
-		}
-		
-		button{
-			font-family: helvetica;
-			font-size: 20;
-			margin-left: 140px;
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-	</style>
-	</head>
-	
-  	<body>
-		<h1>Register</h1>
-        <img src="nature.jpg" alt="nature">
-		
-		<form>
-			<br><br><label for="firstName">First Name</label><br>
-			<input type="text" id="firstName" name="firstName"><br><br>
-			
-			<label for="lastName">Last Name</label><br>
-			<input type="text" id="lastName" name="lastName"><br><br>
-			
-			<label for="username">Username</label><br>
-			<input type="text" id="username" name="username"><br><br>
-			
-			<label for="email">Email</label><br>
-			<input type="text" id="email" name="email"><br><br>
-			
-			<label for="occupation">Are you a Student or are Working?</label><br>
-			<input type="radio" id="student" name="student">
-			<label style="font-family: helvetica;
-			padding-left: 10px;
-			font-size: 20;"  for="student">Student</label><br>
-			<input type="radio" id="working" name="working">
-			<label  style="font-family: helvetica;
-			padding-left: 10px;
-			font-size: 20;" for="working">Working</label><br>
-		</form>
-		
-		<h7>Already have an account? Sign In<br><br></h7>
-		
-		<button>
-			Register
-		</button>
-	</body>
+<head>
+<title>Student Registration Form</title>
+  
+<style>
+  h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: SlateBlue; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+  </style>  
+  
+</head>
+ 
+<body>
+<h3 >STUDENT REGISTRATION FORM</h3>
+
+ 
+<table align="center" cellpadding = "10">
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>
+<img src="male-placeholder-image.jpeg" alt="profile photo" width="50" height="60">
+</td>
+</tr>
+  
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="First_Name" />
+</td
+  
+</tr>
+ 
+
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="Last_Name" />
+
+</td>
+</tr>
+ 
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="Email_Id" maxlength="100" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="Mobile_Number" maxlength="10" />
+
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="City" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="Pin_Code" maxlength="6" />
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE</td>
+<td><input type="text" name="State" maxlength="30" />
+
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COURSE</td>
+<td><input type="text" name="Country" /></td>
+</tr>
+ 
+
+
+ 
+<!----- Course ---------------------------------------------------------->
+<tr>
+<td>YEAR<br />OF STUDY</td>
+<td>
+FIRST
+<input type="radio" name="FY" value="FIRST">
+SECOND
+<input type="radio" name="SY" value="SECOND">
+THIRD
+<input type="radio" name="TY" value="THIRD">
+FOURTH
+<input type="radio" name="FY" value=FOURTH>
+</td>
+</tr>
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
 </html>
